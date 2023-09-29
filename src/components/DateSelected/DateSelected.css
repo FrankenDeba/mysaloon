@@ -1,0 +1,15 @@
+.date-selected--container {
+  background-color: #c8b6ff;
+  border-radius: 3px;
+  padding: 5px;
+  box-shadow: 0 0 3px #c8b6ff;
+  color: #fff;
+  width: fit-content;
+  opacity: 0;
+  transition: opacity 1.5s linear;
+  margin: 10px;
+}
+
+.date-selected--container.date-selected {
+  opacity: 100%;
+}

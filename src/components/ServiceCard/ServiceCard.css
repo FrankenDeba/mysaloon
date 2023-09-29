@@ -1,0 +1,59 @@
+.service-card--container {
+  box-sizing: border-box;
+  width: 150px;
+  height: 125px;
+  /* background-image: url("haircut1.jpg"); */
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border-radius: 10px;
+  color: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.service-card--container.selected {
+  border: 2px solid #83c5be;
+  opacity: 100% !important;
+}
+
+.service-card--container img {
+  width: 100%;
+  /* opacity: 50%; */
+  height: 100%;
+  position: absolute;
+  z-index: -100;
+  top: 0px;
+  left: 0px;
+  border-radius: 10px;
+}
+.service-card--title {
+  background-color: #a2d2ff;
+  margin: 0;
+  padding: 0;
+  bottom: 0;
+  border-radius: 0 0 10px 10px;
+}
+
+.service-card--container img:hover {
+  opacity: 100%;
+}
+
+.service-card--img-holder {
+  margin: 0;
+  padding: 0;
+}
+
+.service-card--container .tick {
+  background-color: #83c5be;
+  padding: 10px;
+  width: 20%;
+  color: white;
+  border-radius: 5px 0;
+  z-index: 50;
+  opacity: 100%;
+}

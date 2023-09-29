@@ -1,0 +1,13 @@
+.nav-bar--container {
+  /* width: 150px; */
+}
+
+.nav-bar--container ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.nav-bar--container ul li {
+  margin: 0 5px;
+}
