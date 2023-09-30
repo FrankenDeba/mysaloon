@@ -14,6 +14,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 10px;
+  /* transform: scale(1.5); */
 }
 
 .service-card--container.selected {
@@ -30,6 +31,11 @@
   top: 0px;
   left: 0px;
   border-radius: 10px;
+  max-width: 100%;
+  max-height: 100%;
+
+  /* transform: scale(1.5); */
+  overflow: hidden;
 }
 .service-card--title {
   background-color: #a2d2ff;

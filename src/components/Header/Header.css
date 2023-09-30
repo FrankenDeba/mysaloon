@@ -12,4 +12,5 @@
   box-sizing: border-box;
   align-items: center;
   margin-bottom: 20px;
+  box-shadow: 0 10px 10px #ddd;
 }

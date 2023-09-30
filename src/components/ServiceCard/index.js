@@ -4,8 +4,8 @@ import "./ServiceCard.css";
 function ServiceCard({ onSelect, service }) {
   const [selected, setSelected] = useState();
   const onSelectedHandler = (ser) => {
+    onSelect(ser, !selected);
     setSelected((sel) => !sel);
-    onSelect(ser);
   };
 
   return (

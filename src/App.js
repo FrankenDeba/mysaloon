@@ -45,7 +45,7 @@ function App() {
     });
   }, []);
 
-  const selectedServicesHandler = (service) => {
+  const selectedServicesHandler = (service, isSelected) => {
     setSelectedServices(
       (prevSel) => {
         return new Set([...prevSel, service]);
@@ -61,10 +61,10 @@ function App() {
     for (let hour = 0; hour < 12; hour++)
       slots.push({
         id: hour + 1,
-        start: dayjs(value).add(hour, "hour").format("HH:mm a"),
+        start: dayjs(value).add(hour, "hour").format("HH:mma"),
         end: dayjs(value)
           .add(hour + 1, "hour")
-          .format("HH:mm a"),
+          .format("HH:mma"),
         isAvailable: hour % 2 === 0,
       });
 
@@ -87,10 +87,12 @@ function App() {
       <Header />
       <div>
         <div className="parlour-and-services">
+          <div className="skew-bg2"></div>
           <Services services={services} onSelect={selectedServicesHandler} />
           <div className="parlour-img-holder">
             <img src={parlourImg} alt="parlour" />
           </div>
+          <div className="skew-bg1"></div>
         </div>
         {selectedServices.size > 0 && (
           <DatePicker setDateHandler={setDateHandler} />

@@ -3,4 +3,5 @@
   width: 50%;
   /* justify-content: space-between; */
   flex-wrap: wrap;
+  height: fit-content;
 }
