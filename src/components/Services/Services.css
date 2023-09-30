@@ -23,7 +23,8 @@
 
 .services--iso-box > p {
   text-align: left;
-  color: #0077b6;
+  color: #fff;
+  /* #0077b6; */
   width: fit-content;
   background: rgba(255, 255, 255, 0.25);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);

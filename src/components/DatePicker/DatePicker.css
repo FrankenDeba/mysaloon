@@ -16,8 +16,14 @@
 
 .date-picker--comp .react-datetime-picker__wrapper {
   border: none;
-  box-shadow: 0 0 5px #c8b6ff;
-  background-color: #c8b6ff;
+  /* box-shadow: 0 0 5px #c8b6ff;
+  background-color: #c8b6ff; */
+  background: rgb(131, 56, 236);
+  background: linear-gradient(
+    6deg,
+    rgba(131, 56, 236, 1) 50%,
+    rgba(159, 134, 192, 1) 100%
+  );
   color: white;
   padding: 10px 15px;
 

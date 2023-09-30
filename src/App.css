@@ -1,6 +1,9 @@
 .App {
   text-align: center;
   /* background-color: #edf6f9; */
+  /* background-color: #000; */
+  background-color: #231942;
+  min-height: 1000px;
 }
 
 .parlour-and-services {
@@ -16,32 +19,46 @@
   width: 50%;
   max-height: 450px;
   margin-bottom: 50px;
+  z-index: 5;
 }
 
 .parlour-img-holder img {
   /* width: 75%; */
   max-height: 100%;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 }
 
 .skew-bg1 {
   width: 700px;
   height: 800px;
-  background-color: #caf0f8;
+  /* background-color: #caf0f8; */
   position: absolute;
   top: -100px;
   right: -300px;
   transform: skew(20deg) rotate(-45deg);
-  z-index: -500;
+  z-index: 0;
+  background: rgb(56, 179, 236);
+  background: linear-gradient(
+    6deg,
+    rgba(56, 179, 236, 1) 50%,
+    rgba(0, 247, 255, 1) 100%
+  );
 }
 
 .skew-bg2 {
   width: 800px;
   height: 500px;
-  background-color: #ffd6ff;
+  /* background-color: #ffd6ff; */
+  background: rgb(131, 56, 236);
+  background: radial-gradient(
+    circle,
+    rgba(131, 56, 236, 1) 40%,
+    rgba(159, 134, 192, 1) 100%
+  );
   opacity: 0.5;
   position: absolute;
   top: -200px;
   left: -50px;
   transform: skew(20deg) rotate(45deg);
-  z-index: -500;
+  z-index: 0;
 }

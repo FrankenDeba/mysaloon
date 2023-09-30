@@ -1,16 +1,16 @@
 .header--container {
   padding: 15px 10px;
-  background-color: #c8b6ff;
-  box-shadow: 0 0 5px #c8b6ff;
+  background-color: #fff;
+  box-shadow: 0 0 5px #ddd;
   position: sticky;
   top: 0px;
   z-index: 1000;
-  color: #fff;
+  color: #9f86c0;
   font-size: 24px;
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
   align-items: center;
   margin-bottom: 20px;
-  box-shadow: 0 10px 10px #ddd;
+  box-shadow: 0 3px 3px #ddd;
 }

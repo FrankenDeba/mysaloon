@@ -1,5 +1,11 @@
 .slot-picker--container {
-  background-color: #a2d2ff;
+  /* background-color: #a2d2ff; */
+  background: rgb(112, 214, 255);
+  background: radial-gradient(
+    circle,
+    rgba(112, 214, 255, 1) 40%,
+    rgba(162, 210, 255, 1) 100%
+  );
   border-radius: 3px;
   padding: 5px;
   box-shadow: 0 0 3px #ddd;
