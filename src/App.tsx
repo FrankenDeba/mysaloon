@@ -1,12 +1,13 @@
 import React from "react";
-import "./App.css";
-import servicesList from "./constants/services";
 
 // import HaircutImg from "./assets/haircut1.jpg";
 import { useEffect, useState } from "react";
 import dayjs from "dayjs";
 import Header from "./components/Header";
 import Home from "./pages/Home";
+import "./App.css";
+
+import servicesList from "./constants/services";
 
 function App() {
   const [services, setServices] = useState({});

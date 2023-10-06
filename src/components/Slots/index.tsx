@@ -1,9 +1,8 @@
-import React, { useEffect } from "react";
+import React from "react";
 import SlotPicker from "../SlotPicker";
 import "./Slots.css";
 
 function Slots({ slots, setSlot, slotSelected }) {
-  const slotsRef = React.createRef();
   // useEffect(() => {
   //   slotsRef?.current?.scrollIntoView({ behavior: "smooth" });
   // }, []);

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./SlotPicker.css";
 
 function SlotPicker({ slot, setSlot, slotSelected }) {

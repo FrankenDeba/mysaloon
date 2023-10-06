@@ -1,4 +1,4 @@
-import React, { ReactElement, useEffect, useState } from "react";
+import React, { ReactElement, useState } from "react";
 import "./ServiceCard.css";
 
 function ServiceCard({ onSelect, service }): ReactElement {
@@ -7,10 +7,6 @@ function ServiceCard({ onSelect, service }): ReactElement {
     onSelect(ser, !selected);
     setSelected((sel) => !sel);
   };
-
-  useEffect(() => {
-    console.log("service.imgSrc: ", service.imgSrc);
-  }, []);
 
   return (
     <div
