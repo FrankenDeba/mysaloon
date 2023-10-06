@@ -1,3 +1,4 @@
+// @ts-ignore
 import dayjs from "dayjs";
 import React from "react";
 import "./DateSelected.css";

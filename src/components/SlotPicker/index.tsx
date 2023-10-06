@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./SlotPicker.css";
 
-function SlotPicker({ slot, setSlot = () => {}, slotSelected }) {
+function SlotPicker({ slot, setSlot, slotSelected }) {
   //   const [selected, isSelected] = useState(false);
   const setSlotHandler = () => {
     // isSelected(true);
@@ -14,7 +14,7 @@ function SlotPicker({ slot, setSlot = () => {}, slotSelected }) {
       }
       ${slot.isAvailable ? "" : "not-available"}
       `}
-      onClick={() => setSlotHandler(slot)}
+      onClick={() => setSlotHandler()}
     >
       <p className="not-allowed-tick">x</p>
       {slotSelected === slot?.id && <span className="slot-tick">✔</span>}

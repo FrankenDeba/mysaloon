@@ -1,18 +1,12 @@
-import Services from "./components/Services";
+import React from "react";
 import "./App.css";
-import HaircutImg from "./assets/haircut1.jpg";
-
-import facialImg from "./assets/facial.jpg";
-import parlourImg from "./assets/parlour.jpg";
 import servicesList from "./constants/services";
 
 // import HaircutImg from "./assets/haircut1.jpg";
 import { useEffect, useState } from "react";
-import DatePicker from "./components/DatePicker";
-import DateSelected from "./components/DateSelected";
-import Slots from "./components/Slots";
 import dayjs from "dayjs";
 import Header from "./components/Header";
+import Home from "./pages/Home";
 
 function App() {
   const [services, setServices] = useState({});
@@ -45,15 +39,10 @@ function App() {
     });
   }, []);
 
-  const selectedServicesHandler = (service, isSelected) => {
-    setSelectedServices(
-      (prevSel) => {
-        return new Set([...prevSel, service]);
-      },
-      () => {
-        console.log({ selectedServices });
-      }
-    );
+  const selectedServicesHandler = (service: any, isSelected: boolean) => {
+    setSelectedServices((prevSel) => {
+      return new Set([...prevSel, service]);
+    });
   };
 
   const setDateHandler = (value) => {
@@ -85,21 +74,16 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <div>
-        <div className="parlour-and-services">
-          <div className="skew-bg2"></div>
-          <Services services={services} onSelect={selectedServicesHandler} />
-          <div className="parlour-img-holder">
-            <img src={parlourImg} alt="parlour" />
-          </div>
-          <div className="skew-bg1"></div>
-        </div>
-        {selectedServices.size > 0 && (
-          <DatePicker setDateHandler={setDateHandler} />
-        )}
-        <DateSelected date={date} />
-        <Slots slots={slots} setSlot={setSlotHandler} slotSelected={slot?.id} />
-      </div>
+      <Home
+        setDateHandler={setDateHandler}
+        setSlotHandler={setSlotHandler}
+        selectedServicesHandler={selectedServicesHandler}
+        date={date}
+        slots={slots}
+        slot={slot}
+        services={services}
+        selectedServices={selectedServices}
+      />
     </div>
   );
 }

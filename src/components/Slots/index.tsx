@@ -4,9 +4,9 @@ import "./Slots.css";
 
 function Slots({ slots, setSlot, slotSelected }) {
   const slotsRef = React.createRef();
-  useEffect(() => {
-    slotsRef?.current?.scrollIntoView({ behavior: "smooth" });
-  }, []);
+  // useEffect(() => {
+  //   slotsRef?.current?.scrollIntoView({ behavior: "smooth" });
+  // }, []);
   return (
     <div
       className="slots--container"
@@ -19,7 +19,7 @@ function Slots({ slots, setSlot, slotSelected }) {
         <SlotPicker slot={slot} setSlot={setSlot} slotSelected={slotSelected} />
       ))}
       {slotSelected && <button>SUBMIT</button>}
-      <div ref={slotsRef} />
+      {/* <div ref={slotsRef} /> */}
     </div>
   );
 }

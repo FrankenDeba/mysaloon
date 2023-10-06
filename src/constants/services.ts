@@ -1,3 +1,4 @@
+// const HaircutImg = "haircut1.jpg";
 import HaircutImg from "../assets/haircut1.jpg";
 import facialImg from "../assets/facial.jpg";
 
