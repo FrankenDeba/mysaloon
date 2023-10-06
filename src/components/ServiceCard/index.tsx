@@ -15,7 +15,7 @@ function ServiceCard({ onSelect, service }): ReactElement {
     >
       {selected && <div className="tick">✔</div>}
       <div className="service-card--img-holder">
-        <img src={`${service.imgSrc}`} />
+        <img src={`${service.imgSrc}`} alt="service" />
       </div>
       <div className="service-card--title">{service.title}</div>
     </div>
